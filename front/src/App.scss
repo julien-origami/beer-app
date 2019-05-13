@@ -1,0 +1,20 @@
+@import "./styles/colors";
+@import "./styles/sizes";
+
+.App {
+  background-color: $blue-follow;
+  font-size: calc(10px + 2vmin);
+  min-height: 100vh;
+  text-align: center;
+}
+
+.App-header {
+  height: 3rem;
+  width: 100%;
+}
+.App-content {
+  margin: auto;
+  width: 100vw;
+  max-width: 100rem;
+  padding: 1rem 0;
+}

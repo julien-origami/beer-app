@@ -1,0 +1,110 @@
+openapi: 3.0.1
+info:
+  title: Beers API
+  description: Follow Beers API
+  version: "0.1"
+servers:
+  - url: "https://localhost:4000"
+paths:
+  /beers:
+    get:
+      description: List all beers
+      responses:
+        "200":
+          description: Successful response
+          content:
+            application/json; charset=utf-8:
+              schema:
+                type: string
+    post:
+      description: Create a beer
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                ibu:
+                  type: string
+            examples:
+              "0":
+                value: |-
+                  {
+                      "name": "Paix Dieu",
+                      "ibu": "24"
+                  }
+      responses:
+        "200":
+          description: Successful response. Return the newly created beer
+
+  /beers/{beerId}:
+    get:
+      description: Get a beer
+      parameters:
+        - in: path
+          name: beerId
+          schema:
+            type: string
+            format: uuid
+          required: true
+      responses:
+        "200":
+          description: "Successful response"
+    put:
+      description: Update a beer
+      parameters:
+        - in: path
+          name: beerId
+          schema:
+            type: string
+            format: uuid
+          required: true
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                ibu:
+                  type: number
+                name:
+                  type: string
+            examples:
+              "0":
+                value: |-
+                  {
+                      "ibu": 30
+                      "name": "Example"
+                  }
+      responses:
+        "200":
+          description: Successfull response
+  /beers/{beerId}/rate:
+    post:
+      description: Rate a beer
+      parameters:
+        - in: path
+          name: beerId
+          schema:
+            type: string
+            format: uuid
+          required: true
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                score:
+                  type: number
+            examples:
+              "0":
+                value: |-
+                  {
+                      "score": 4
+                  }
+      responses:
+        "200":
+          description: Successful response. Return the updated beer

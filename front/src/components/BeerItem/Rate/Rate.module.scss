@@ -1,0 +1,27 @@
+$size: 3rem;
+
+.rate {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+.inLove {
+  background: url(../../../assets/svg/in-love.svg);
+  height: $size;
+  width: $size;
+  cursor: pointer;
+}
+
+.happy {
+  background: url(../../../assets/svg/happy.svg);
+  height: $size;
+  width: $size;
+  cursor: pointer;
+}
+
+.sad {
+  background: url(../../../assets/svg/sad.svg);
+  height: $size;
+  width: $size;
+  cursor: pointer;
+}

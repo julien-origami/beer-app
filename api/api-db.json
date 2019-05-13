@@ -1,0 +1,52 @@
+{
+  "beers": [
+    {
+      "uuid": "18a4c2dc-ef9a-4430-9dc7-c3c63c70e7a1",
+      "name": "Brewdog",
+      "ibu": "30",
+      "score": 7.314285714285714,
+      "nbRate": 35
+    },
+    {
+      "uuid": "76a6ea48-e39d-41f3-ad64-354e29c7f17c",
+      "name": "kwak",
+      "score": 5,
+      "nbRate": 30
+    },
+    {
+      "uuid": "56ea12d8-390c-4e05-ac03-dbdea5bedb9b",
+      "name": "Paix Dieu",
+      "ibu": "24",
+      "score": 9,
+      "nbRate": 8
+    },
+    {
+      "uuid": "e22c2b2a-2808-4a52-b345-dbe36c1668e3",
+      "score": 5.466666666666667,
+      "nbRate": 15,
+      "name": "chouffe",
+      "ibu": "4"
+    },
+    {
+      "uuid": "6e473083-d4af-476f-8047-ebba19268a78",
+      "score": 7,
+      "nbRate": 3,
+      "name": "xwwxcwxcwxc",
+      "ibu": "8"
+    },
+    {
+      "uuid": "ee12c7e8-c2b9-4259-b699-0dd972bea04f",
+      "score": 4.666666666666667,
+      "nbRate": 6,
+      "name": "qsdsdqsdqd",
+      "ibu": "9"
+    },
+    {
+      "uuid": "d962d1c1-26d9-48d6-acef-059d0a1b6b44",
+      "score": 5.25,
+      "nbRate": 4,
+      "name": "qsdqsdqsdqsd",
+      "ibu": "9"
+    }
+  ]
+}

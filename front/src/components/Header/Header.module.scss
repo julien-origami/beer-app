@@ -1,0 +1,30 @@
+@import "../../styles/colors";
+
+.header {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  background-color: $color-secondary;
+  > * {
+    color: $color-primary;
+  }
+
+  a {
+    text-decoration: none;
+    display: inline-block;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.logo {
+  height: 2rem;
+  width: 2rem;
+  margin: 0 1rem;
+  img {
+    margin: 0;
+  }
+}
+.name {
+}
